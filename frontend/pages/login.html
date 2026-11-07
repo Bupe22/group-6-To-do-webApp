@@ -1,11 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-in</title>
+    <title>Sign In - My Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Welcome</p>
+
+    <div class="container">
+        <div class="form-box">
+            <h1> Welcome Back!</h1>
+            <p class="subtitle">Sign in to continue managing your tasks</p>
+
+            <form>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="forgot">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn">Log In</button>
+            </form>
+
+            <p class="switch">
+                Don't have an account?
+                <a href="signup.html">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
