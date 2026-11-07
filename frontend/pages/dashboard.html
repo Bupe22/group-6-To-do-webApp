@@ -10,81 +10,51 @@
 <body>
   <div class="dashboard">
     <aside class="sidebar">
-      <a class="brand" href="../index.html" aria-label="Todo List home">
-        <span class="brand-mark" aria-hidden="true">t.</span>
-        <span>todo list</span>
-      </a>
+      <a class="brand" href="../index.html" aria-label="Todo List home">TODO LIST</a>
 
       <div class="sidebar-section">
         <p class="section-label">Workspace</p>
         <nav class="side-nav" aria-label="Task views">
           <a class="nav-item is-active" href="#today" aria-current="location">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3.5" y="4.5" width="13" height="12" rx="2"></rect><path d="M7 3v3M13 3v3M3.5 8h13"></path></svg>
             <span>Today</span>
-            <span class="nav-count">2</span>
           </a>
           <a class="nav-item" href="#upcoming">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 5.5h12M4 10h12M4 14.5h8"></path><circle cx="15" cy="14.5" r="2"></circle></svg>
             <span>Upcoming</span>
           </a>
           <a class="nav-item" href="#completed">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6.5"></circle><path d="m7.2 10 1.8 1.8 3.8-4"></path></svg>
             <span>Completed</span>
           </a>
         </nav>
       </div>
 
-      <div class="sidebar-note">
-        <div class="note-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3M5.99 5.99l2.12 2.12m7.78 7.78 2.12 2.12m0-12.02-2.12 2.12m-7.78 7.78-2.12 2.12"></path><circle cx="12" cy="12" r="4"></circle></svg>
-        </div>
-        <p class="note-title">Make room to focus</p>
-        <p class="note-copy">Small steps add up. Pick one thing and give it your attention.</p>
-      </div>
-
-      <a class="back-link" href="../index.html">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 4-6 6 6 6M2 10h16"></path></svg>
-        Back to home
-      </a>
+      <a class="back-link" href="login.html">Log out</a>
     </aside>
 
     <main class="main-content">
       <header class="topbar">
         <div class="breadcrumb"><span>Workspace</span><span class="breadcrumb-slash">/</span><strong>My tasks</strong></div>
-        <div class="profile">
-          <span class="profile-name">Alex Morgan</span>
-          <span class="avatar" aria-label="Alex Morgan">A</span>
-        </div>
       </header>
 
       <div class="content">
         <section class="welcome">
           <div>
-            <p class="eyebrow">YOUR DAY</p>
-            <h1>Good morning, Alex <span aria-hidden="true">✳</span></h1>
-            <p class="welcome-copy">A little progress each day adds up to big results.</p>
+            <h1>Tasks</h1>
           </div>
         </section>
 
-        <section class="overview-grid" aria-label="Today's overview">
+        <section class="overview-grid" aria-label="Overview">
           <article class="overview-card">
-            <div class="overview-top"><span class="overview-label">Tasks for today</span><span class="overview-icon" aria-hidden="true">☷</span></div>
-            <div class="overview-value">4</div>
-            <p class="overview-foot"><span class="status-dot"></span>2 left to complete</p>
+            <div class="overview-top"><span class="overview-label">Tasks for today</span></div>
+            <div class="overview-value">0</div>
           </article>
           <article class="overview-card">
-            <div class="overview-top"><span class="overview-label">Completed</span><span class="overview-icon check-icon" aria-hidden="true">✓</span></div>
-            <div class="overview-value">2<span class="value-unit"> tasks</span></div>
-            <p class="overview-foot">50% of today's list</p>
+            <div class="overview-top"><span class="overview-label">Completed</span></div>
+            <div class="overview-value">0</div>
           </article>
           <article class="progress-card">
             <div>
               <p class="progress-label">Daily progress</p>
-              <p class="progress-title">2 of 4 tasks done</p>
-              <p class="progress-copy">Keep your momentum going.</p>
-            </div>
-            <div class="progress-ring" role="img" aria-label="50% completed">
-              <span>50%</span>
+              <p class="progress-title">No tasks tracked</p>
             </div>
           </article>
         </section>
@@ -94,26 +64,7 @@
           <div class="task-panel-header">
             <div>
               <h2 id="task-heading">Today's tasks</h2>
-              <p id="task-subheading">A clear list makes for a clear mind.</p>
             </div>
-          </div>
-          <div class="task-list">
-            <article class="task-row">
-              <input class="task-check" id="task-feedback" type="checkbox">
-              <label class="task-main" for="task-feedback">
-                <span class="task-title">Reply to design feedback</span>
-                <span class="task-meta"><span class="category">Work</span></span>
-              </label>
-              <span class="due-label"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"></circle><path d="M8 5v3.3l2.1 1.2"></path></svg>10:00 AM</span>
-            </article>
-            <article class="task-row">
-              <input class="task-check" id="task-planning" type="checkbox">
-              <label class="task-main" for="task-planning">
-                <span class="task-title">Plan the week ahead</span>
-                <span class="task-meta"><span class="category">Personal</span></span>
-              </label>
-              <span class="due-label"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"></circle><path d="M8 5v3.3l2.1 1.2"></path></svg>11:30 AM</span>
-            </article>
           </div>
         </section>
 
@@ -121,26 +72,7 @@
           <div class="task-panel-header">
             <div>
               <h2 id="upcoming-heading">Coming up</h2>
-              <p>A look at what's coming next.</p>
             </div>
-          </div>
-          <div class="task-list">
-            <article class="task-row">
-              <input class="task-check" id="task-team-sync" type="checkbox">
-              <label class="task-main" for="task-team-sync">
-                <span class="task-title">Prepare notes for team sync</span>
-                <span class="task-meta"><span class="category">Work</span></span>
-              </label>
-              <span class="due-label"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"></circle><path d="M8 5v3.3l2.1 1.2"></path></svg>Tomorrow</span>
-            </article>
-            <article class="task-row">
-              <input class="task-check" id="task-dentist" type="checkbox">
-              <label class="task-main" for="task-dentist">
-                <span class="task-title">Book a dentist appointment</span>
-                <span class="task-meta"><span class="category">Personal</span></span>
-              </label>
-              <span class="due-label"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"></circle><path d="M8 5v3.3l2.1 1.2"></path></svg>Later</span>
-            </article>
           </div>
         </section>
 
@@ -148,31 +80,12 @@
           <div class="task-panel-header">
             <div>
               <h2 id="completed-heading">Completed today</h2>
-              <p>Look at everything you've accomplished.</p>
             </div>
-          </div>
-          <div class="task-list">
-            <article class="task-row">
-              <input class="task-check" id="task-proposal" type="checkbox" checked>
-              <label class="task-main" for="task-proposal">
-                <span class="task-title">Review project proposal</span>
-                <span class="task-meta"><span class="category">Work</span></span>
-              </label>
-              <span class="due-label"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"></circle><path d="M8 5v3.3l2.1 1.2"></path></svg>09:30 AM</span>
-            </article>
-            <article class="task-row">
-              <input class="task-check" id="task-reading" type="checkbox" checked>
-              <label class="task-main" for="task-reading">
-                <span class="task-title">Read 20 pages</span>
-                <span class="task-meta"><span class="category">Learning</span></span>
-              </label>
-              <span class="due-label"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"></circle><path d="M8 5v3.3l2.1 1.2"></path></svg>04:00 PM</span>
-            </article>
           </div>
         </section>
         </div>
 
-        <footer class="page-footer">One thing at a time. You're doing great.</footer>
+        <footer class="page-footer"></footer>
       </div>
     </main>
   </div>
