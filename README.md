@@ -32,7 +32,10 @@ The Todo List system is designed to make it easier to keep track of daily activi
 ```text
 frontend/
   index.html          # Landing page
-  css/style.css       # Shared styles
+  css/
+    index.css         # Landing page styles
+    login.css         # Sign in page styles
+    signUp.css        # Create account page styles
   pages/
     login.html        # Sign in page
     signUp.html       # Create account page
