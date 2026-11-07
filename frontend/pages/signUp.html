@@ -8,19 +8,18 @@
 </head>
 <body>
   <main class="page">
-    <div class="card">
+    <div class="card auth-card">
       <h1>Create account</h1>
-      <p class="subtitle">Sign up to start managing your tasks.</p>
 
-      <form action="#" method="post">
+      <form action="#" method="post" class="auth-form">
         <div class="field">
-          <label for="name">Full name</label>
+          <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>
         </div>
 
         <div class="field">
-          <label for="email">Email address</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
         </div>
 
         <div class="field">
@@ -33,12 +32,11 @@
           <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required>
         </div>
 
-        <button type="submit" class="btn">Create account</button>
+        <button type="submit" class="btn">Continue</button>
       </form>
 
       <p class="switch">
-        Already have an account?
-        <a href="login.html">Sign in</a>
+        <a href="login.html">Sign in instead</a>
       </p>
     </div>
   </main>
