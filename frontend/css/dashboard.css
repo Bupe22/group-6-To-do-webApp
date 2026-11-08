@@ -138,6 +138,11 @@ body {
 }
 
 .welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
   margin-bottom: 24px;
 }
 
@@ -217,11 +222,27 @@ h1 {
   background: #fff;
 }
 
+.task-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .task-panel-header h2 {
   margin: 0;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: -0.02em;
+}
+
+.task-empty {
+  margin: 16px 0 0;
+  padding: 28px 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
 }
 
 .page-footer {
