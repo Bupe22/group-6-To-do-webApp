@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7f6">
+  <title>Add task - Todo List</title>
+  <link rel="stylesheet" href="../css/addTask.css">
+</head>
+<body class="add-task-page">
+  <div class="add-task-shell">
+    <header class="add-task-header">
+      <a class="add-task-brand" href="../index.html" aria-label="Todo List home">TODO LIST</a>
+      <a class="add-task-back" href="dashboard.html">Back to dashboard</a>
+    </header>
+
+    <main class="add-task-main">
+      <section class="add-task-card" aria-labelledby="add-task-page-title">
+        <h1 class="add-task-heading" id="add-task-page-title">Add a task</h1>
+
+        <form class="task-form" action="dashboard.html" method="get">
+          <div class="form-field">
+            <label for="task-title">Task name</label>
+            <input class="form-control" id="task-title" name="title" type="text" placeholder="e.g. Prepare project presentation" maxlength="120" required>
+          </div>
+
+          <div class="form-field">
+            <label for="task-due">Due date <span class="optional">(optional)</span></label>
+            <input class="form-control" id="task-due" name="due" type="date">
+          </div>
+
+          <div class="form-actions form-actions--page">
+            <a class="button button--ghost" href="dashboard.html">Cancel</a>
+            <button class="button button--primary" type="submit">Add task</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
