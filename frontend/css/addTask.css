@@ -70,12 +70,6 @@
   line-height: 1.25;
 }
 
-.modal-subtitle {
-  margin: 5px 0 0;
-  color: var(--at-muted);
-  font-size: 12px;
-}
-
 .modal-close {
   flex: 0 0 auto;
   display: inline-grid;
@@ -150,20 +144,6 @@
   box-shadow: 0 0 0 3px rgba(23, 23, 23, 0.08);
 }
 
-textarea.form-control {
-  min-height: 92px;
-  resize: vertical;
-}
-
-select.form-control {
-  appearance: none;
-  padding-right: 36px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1.25 5.5 5.75 10 1.25' fill='none' stroke='%23777873' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 11px 7px;
-}
-
 .form-control[type="date"] {
   color-scheme: light;
 }
@@ -175,12 +155,6 @@ select.form-control {
 
 .form-control[type="date"]::-webkit-calendar-picker-indicator:hover {
   opacity: 0.9;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
 }
 
 .form-actions {
@@ -201,18 +175,6 @@ select.form-control {
 
 .form-actions--page {
   justify-content: flex-end;
-}
-
-.form-text-link {
-  color: var(--at-muted);
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.form-text-link:hover {
-  color: var(--at-text);
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 .button {
@@ -323,18 +285,12 @@ select.form-control {
 }
 
 .add-task-heading {
-  margin: 0;
+  margin: 0 0 20px;
   color: var(--at-text);
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.25;
-}
-
-.add-task-description {
-  margin: 6px 0 22px;
-  color: var(--at-muted);
-  font-size: 13px;
 }
 
 /* Focus */
@@ -383,10 +339,6 @@ select.form-control {
     margin-bottom: 18px;
   }
 
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
   .form-control {
     font-size: 16px;
   }
@@ -395,13 +347,7 @@ select.form-control {
     align-items: stretch;
   }
 
-  .form-text-link {
-    order: 2;
-    align-self: flex-start;
-  }
-
   .form-buttons {
-    order: 1;
     width: 100%;
     margin-left: 0;
   }
@@ -435,11 +381,6 @@ select.form-control {
 
   .add-task-heading {
     font-size: 20px;
-  }
-
-  .add-task-description {
-    margin-bottom: 18px;
-    font-size: 12px;
   }
 }
 

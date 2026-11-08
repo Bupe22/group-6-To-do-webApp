@@ -74,15 +74,12 @@
     </main>
   </div>
 
-  <div class="modal-layer" id="add-task" role="dialog" aria-modal="true" aria-labelledby="add-task-title" aria-describedby="add-task-subtitle">
+  <div class="modal-layer" id="add-task" role="dialog" aria-modal="true" aria-labelledby="add-task-title">
     <a class="modal-backdrop" href="#close" aria-label="Close add task dialog" tabindex="-1"></a>
 
     <div class="modal-panel">
       <div class="modal-header">
-        <div>
-          <h2 class="modal-title" id="add-task-title">Add a task</h2>
-          <p class="modal-subtitle" id="add-task-subtitle">Capture what needs doing and when.</p>
-        </div>
+        <h2 class="modal-title" id="add-task-title">Add a task</h2>
         <a class="modal-close" href="#close" aria-label="Close add task dialog">
           <span aria-hidden="true">&times;</span>
         </a>
@@ -95,28 +92,11 @@
         </div>
 
         <div class="form-field">
-          <label for="task-notes">Notes <span class="optional">(optional)</span></label>
-          <textarea class="form-control" id="task-notes" name="notes" rows="3" placeholder="Add context, links, or a checklist..." maxlength="500"></textarea>
-        </div>
-
-        <div class="form-grid">
-          <div class="form-field">
-            <label for="task-due">Due date <span class="optional">(optional)</span></label>
-            <input class="form-control" id="task-due" name="due" type="date">
-          </div>
-
-          <div class="form-field">
-            <label for="task-priority">Priority</label>
-            <select class="form-control" id="task-priority" name="priority">
-              <option value="low">Low</option>
-              <option value="medium" selected>Medium</option>
-              <option value="high">High</option>
-            </select>
-          </div>
+          <label for="task-due">Due date <span class="optional">(optional)</span></label>
+          <input class="form-control" id="task-due" name="due" type="date">
         </div>
 
         <div class="form-actions">
-          <a class="form-text-link" href="addTask.html">Open full page</a>
           <div class="form-buttons">
             <a class="button button--ghost" href="#close">Cancel</a>
             <button class="button button--primary" type="submit">Add task</button>
