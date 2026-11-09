@@ -32,7 +32,7 @@ body {
   padding: 0 10px;
   color: #171717;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0.04em;
   text-decoration: none;
 }
@@ -212,4 +212,19 @@ h1 { margin: 0; font-size: 30px; line-height: 1.2; font-weight: 600; }
   .progress-card { min-height: auto; padding: 14px; }
   .overview-value { font-size: 25px; }
   .task-panel { padding: 16px; }
+}
+.back-link{ 
+  color: red !important;
+  font-weight: 600;
+
+}.dashboard-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+.dashboard-item {
+  font-size: 22px;
+  color: blue;
 }
